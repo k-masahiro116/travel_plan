@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="旅行プラン一覧。ドライブ行程やスケジュールをまとめて確認できます。"
+    />
+    <title>福島旅行プラン | Travel Plans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body class="home-page">
+    <header class="home-header">
+      <div class="home-header__inner">
+        <p class="home-header__eyebrow">Travel</p>
+        <h1 class="home-header__title">旅行プラン一覧</h1>
+        <p class="home-header__lead">
+          ドライブ旅行プランをまとめています。気になる旅程を選んで、詳しいスケジュールを確認してください。
+        </p>
+      </div>
+      <div class="home-header__pattern" aria-hidden="true"></div>
+    </header>
+
+    <main class="home-main">
+      <section class="catalog-section" aria-labelledby="catalog-title">
+        <div class="catalog-section__inner">
+          <h2 class="visually-hidden" id="catalog-title">登録済みの旅行プラン</h2>
+          <ul class="catalog-grid" id="catalog-grid" aria-label="旅行プラン一覧"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="home-footer">
+      <p>旅行プラン · GitHub Pages</p>
+    </footer>
+
+    <script src="catalog.js"></script>
+  </body>
+</html>
