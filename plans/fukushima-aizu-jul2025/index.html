@@ -44,11 +44,11 @@
           <p class="hero__eyebrow">7/25 – 7/26 · 1泊2日 · レンタカー旅</p>
           <h1 class="hero__title" id="hero-title">福島・会津<br />一泊二日旅行プラン</h1>
           <p class="hero__lead">
-            福島駅をスタート地点とし、桃狩りと温泉街、会津の歴史と味覚を巡るドライブ計画書。
+            福島駅をスタート地点とし、桃狩りのあと飯坂温泉か白石・国見へ。夜は花火、翌日は会津を巡るドライブ計画書。
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#overview">プランを見る</a>
-            <a class="btn btn--ghost" href="#day2">2日目ルートを比較</a>
+            <a class="btn btn--ghost" href="#day1">1日目ルートを比較</a>
           </div>
         </div>
         <div class="hero__scroll" aria-hidden="true">
@@ -109,11 +109,11 @@
 
       <section class="section day-section day-section--peach" id="day1" aria-labelledby="day1-title">
         <div class="container">
-          <header class="section__header section__header--left">
+          <header class="section__header">
             <p class="section__eyebrow">Day 1 · 7/25</p>
-            <h2 class="section__title" id="day1-title">桃狩りと飯坂温泉街ドライブ</h2>
+            <h2 class="section__title" id="day1-title">1日目ルート（2候補）</h2>
             <p class="section__lead">
-              まるよし果樹園で完熟の桃を味わい、飯坂温泉のレトロな街並みを散策する、福島らしい一日。
+              午前は共通で桃狩り。午後は飯坂温泉ルート、または白石うーめん→国見立ち寄りルート。どちらも夜は花火へ。
             </p>
           </header>
 
@@ -147,41 +147,347 @@
                   >
                 </h3>
                 <p>
-                  7月下旬は福島の桃（あかつき等）がベストシーズン。もぎたての完熟桃を堪能します。
+                  7月下旬は福島の桃（あかつき等）がベストシーズン。もぎたての完熟桃を堪能します。ここまで両ルート共通です。
                 </p>
-                <p class="timeline__meta">車で約5〜10分</p>
-              </article>
-            </li>
-            <li class="timeline__item">
-              <div class="timeline__time">12:15 – 14:00</div>
-              <article class="timeline__card">
-                <h3 class="timeline__heading">飯坂温泉街でランチ＆街歩き</h3>
-                <p>
-                  名物の「飯坂温泉円盤餃子」や地元の食堂でランチ。食後は日本最古の木造共同浴場「鯖湖湯」周辺のレトロな街並みを散策。
-                </p>
-                <p class="timeline__meta">車で約30〜40分</p>
-              </article>
-            </li>
-            <li class="timeline__item">
-              <div class="timeline__time">14:30〜</div>
-              <article class="timeline__card">
-                <h3 class="timeline__heading">帰宅・休憩</h3>
-                <p>
-                  蓬莱町の自宅へ戻り、荷物を置いたり翌日の会津ドライブに向けてゆっくり休憩します。
-                </p>
-                <p class="timeline__meta">車移動</p>
-              </article>
-            </li>
-            <li class="timeline__item">
-              <div class="timeline__time">夜</div>
-              <article class="timeline__card">
-                <h3 class="timeline__heading">自宅または周辺でディナー</h3>
-                <p>
-                  自宅でのんびり過ごすか、近隣で美味しい食事を楽しんで翌日に備えます。
-                </p>
+                <p class="timeline__meta">12:00以降は下の候補ルートへ</p>
               </article>
             </li>
           </ol>
+
+          <div class="route-tabs" role="tablist" aria-label="1日目ルート選択">
+            <button
+              class="route-tabs__btn is-active"
+              type="button"
+              role="tab"
+              id="tab-day1-route1"
+              aria-selected="true"
+              aria-controls="panel-day1-route1"
+            >
+              <span class="route-tabs__badge">候補1</span>
+              飯坂温泉ルート
+            </button>
+            <button
+              class="route-tabs__btn"
+              type="button"
+              role="tab"
+              id="tab-day1-route2"
+              aria-selected="false"
+              aria-controls="panel-day1-route2"
+              tabindex="-1"
+            >
+              <span class="route-tabs__badge">候補2</span>
+              白石・国見ルート
+            </button>
+          </div>
+
+          <div
+            class="route-panel is-active"
+            role="tabpanel"
+            id="panel-day1-route1"
+            aria-labelledby="tab-day1-route1"
+          >
+            <p class="route-panel__summary">
+              ランチと日帰り入浴で飯坂温泉街を満喫し、夜は円盤餃子ディナーのあと花火へ。
+            </p>
+            <ol class="timeline">
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">12:15 – 13:30</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">ランチ＆飯坂街歩き</h3>
+                  <p>
+                    昼に入れる店でランチ。温泉街の円盤餃子店は夕方開店のため、<strong>ディナー候補</strong>に分けています。食後は温泉街を散策し、日帰り入浴へ。
+                  </p>
+                  <div class="anaba">
+                    <p class="anaba__title">ランチ候補（昼営業）</p>
+                    <ol class="anaba__list anaba__list--numbered">
+                      <li>
+                        <strong
+                          ><a
+                            href="https://www.gyouza-terui.com/gyouza/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >餃子酒家 照井</a
+                          ></strong
+                        >（円盤餃子）—
+                        イオン福島店北側。昼11:30〜14:00。定休：水曜。果樹園→飯坂の途中で立ち寄りやすい。
+                      </li>
+                      <li>
+                        <strong
+                          ><a
+                            href="https://tabelog.com/fukushima/A0701/A070101/7001032/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >伊達屋</a
+                          ></strong
+                        >（ラーメン）—
+                        上松川駅すぐ。11:00〜14:30（スープがなくなり次第終了）。行列必至。
+                      </li>
+                    </ol>
+                  </div>
+                  <p class="timeline__meta">車で約30〜40分（果樹園から）</p>
+                </article>
+              </li>
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">13:30 – 15:00</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">
+                    <a
+                      href="https://iizaka.com/daytrip/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >飯坂温泉で日帰り入浴</a
+                    >
+                  </h3>
+                  <p>
+                    旅館・ホテルの立ち寄り湯から1か所選ぶ想定です。事前に電話確認推奨。
+                  </p>
+                  <div class="anaba">
+                    <p class="anaba__title">おすすめ日帰り温泉 3選</p>
+                    <ol class="anaba__list anaba__list--numbered">
+                      <li>
+                        <strong
+                          ><a
+                            href="https://www.surikamiteiohtori.com/spa/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >摺上亭大鳥</a
+                          ></strong
+                        >（大人1,000円）— 受付11:00〜14:00／利用〜15:00。露天・サウナあり。
+                      </li>
+                      <li>
+                        <strong>祭屋湯左衛門（巌の湯）</strong>（大人1,000円）—
+                        13:00〜20:00（混雑時は15:00終了のことも）。TEL 024-542-2345。
+                      </li>
+                      <li>
+                        <strong>なかむらや旅館</strong>（800〜1,000円）—
+                        貸切風呂・<strong>完全予約制</strong>。TEL 024-542-4050。
+                      </li>
+                    </ol>
+                  </div>
+                  <p class="timeline__meta">車 or 徒歩 · 入浴後に帰宅</p>
+                </article>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__time">15:30〜</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">帰宅・休憩</h3>
+                  <p>
+                    蓬莱町の自宅へ戻り、夜の花火・翌日の会津ドライブに向けてゆっくり休憩します。
+                  </p>
+                </article>
+              </li>
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">17:00 – 19:00</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">ディナー（円盤餃子候補）</h3>
+                  <p>花火前に早めの夕食。飯坂温泉街の円盤餃子店は夕方開店です。</p>
+                  <div class="anaba">
+                    <p class="anaba__title">ディナー候補</p>
+                    <ol class="anaba__list anaba__list--numbered">
+                      <li>
+                        <strong>餃子 照井 飯坂本店</strong> —
+                        17:00〜21:00（売り切れ次第終了）。定休：水曜。
+                      </li>
+                      <li>
+                        <strong>らーめん餃子 おがた</strong> —
+                        17:00〜22:00。にんにく多め。定休：火曜。
+                      </li>
+                    </ol>
+                  </div>
+                  <p class="timeline__meta">その後、信夫山など花火観覧へ</p>
+                </article>
+              </li>
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">19:30頃</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">
+                    <a
+                      href="https://www.f-kankou.jp/event/27427"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >信夫ヶ丘・ふくしま花火大会を少しだけ観覧</a
+                    >
+                  </h3>
+                  <p>
+                    打ち上げは19:30〜20:30頃。穴場（信夫山・松川土手など）で序盤だけ眺めて帰宅。
+                  </p>
+                  <div class="anaba">
+                    <p class="anaba__title">穴場スポット候補</p>
+                    <ol class="anaba__list anaba__list--numbered">
+                      <li>
+                        <strong>候補1：信夫山（テングラ岩付近・19:00着）</strong> —
+                        駐車場：天狗の森／信夫山ガイドセンター
+                      </li>
+                      <li><strong>候補2：松川土手</strong>（会場対岸）</li>
+                      <li><strong>候補3：阿武隈川サイクリングロード</strong></li>
+                    </ol>
+                  </div>
+                  <p class="timeline__meta">会場周辺は17:00〜22:00交通規制</p>
+                </article>
+              </li>
+            </ol>
+          </div>
+
+          <div
+            class="route-panel"
+            role="tabpanel"
+            id="panel-day1-route2"
+            aria-labelledby="tab-day1-route2"
+            hidden
+          >
+            <p class="route-panel__summary">
+              12時以降に宮城・白石へ。やまぶき亭でうーめんランチ→白石城またはきつね村など観光→国見立ち寄り→そのまま花火へ。やまぶき亭は14:00閉店のため、12:00出発がポイントです。
+            </p>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <div class="timeline__time">12:00</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">桃狩り終了 → 白石へ出発</h3>
+                  <p>
+                    果樹園を出発し、東北道などを利用して白石市へ。ランチ店は14:00閉店のため、遅れないよう移動します。
+                  </p>
+                  <p class="timeline__meta">車で約40〜50分（東北道経由）</p>
+                </article>
+              </li>
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">12:50 – 14:00</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">
+                    <a
+                      href="http://shiroishi-umen.com/yamabukitei/index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >白石うーめん やまぶき亭でランチ</a
+                    >
+                  </h3>
+                  <p>
+                    明治後期の商家を改装したうーめん専門店。醤油・クルミ・黒ごまの3種のタレで楽しむ「うーめん三昧」が人気。白石城からも徒歩圏。
+                  </p>
+                  <div class="anaba">
+                    <p class="anaba__title">店舗メモ</p>
+                    <ul class="anaba__list">
+                      <li>住所：宮城県白石市城北町6-13／TEL 0224-25-2322</li>
+                      <li>営業：11:00〜14:00（時間外は予約）／定休：水曜</li>
+                      <li>駐車場：店裏・向かい城北駐車場あり</li>
+                    </ul>
+                  </div>
+                  <p class="timeline__meta">14:00閉店 · 12:50頃到着が安全</p>
+                </article>
+              </li>
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">14:00 – 16:00</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">白石観光</h3>
+                  <p>
+                    ランチ後は城下町散策か、蔵王方面のきつね村へ。時間の都合でどちらかをメインにする想定です（きつね村は最終入場16:00）。
+                  </p>
+                  <div class="anaba">
+                    <p class="anaba__title">観光スポット候補</p>
+                    <ol class="anaba__list anaba__list--numbered">
+                      <li>
+                        <strong
+                          ><a
+                            href="http://zao-fox-village.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >宮城蔵王キツネ村（きつね村）</a
+                          ></strong
+                        >—
+                        白石市内・白石ICから車で約20分。多数のキツネとふれあえる人気スポット。夏期9:00〜16:30（最終入場16:00）。大人1,500円／小学生以下無料。定休：水曜（祝日等は営業のことも）。駐車場あり。TEL 0224-24-8812。
+                      </li>
+                      <li>
+                        <strong>白石城</strong> —
+                        やまぶき亭から徒歩圏。天守からの眺めと城下町の雰囲気を楽しむ。
+                      </li>
+                      <li>
+                        <strong>武家屋敷通り</strong> —
+                        城下の街並み散策。写真映えする落ち着いた通り。
+                      </li>
+                      <li>
+                        <strong>益岡公園周辺</strong> —
+                        白石城に隣接。時間があればひと休み。
+                      </li>
+                    </ol>
+                    <p class="anaba__note">
+                      きつね村を行く場合はランチ後すぐ出発し、15:30頃までに入場するのが安心。城下町と両方は時間が足りないので、どちらか優先で。
+                    </p>
+                  </div>
+                  <p class="timeline__meta">車（きつね村）or 徒歩（城下）· その後国見へ</p>
+                </article>
+              </li>
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">16:00 – 17:30</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">
+                    <a
+                      href="https://www.michinoeki923.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >国見に立ち寄る</a
+                    >
+                  </h3>
+                  <p>
+                    白石から国道4号・東北道経由で国見町へ。花火会場（福島市）へ戻る動線上で休憩・お土産・軽食に便利です。
+                  </p>
+                  <div class="anaba">
+                    <p class="anaba__title">立ち寄り候補</p>
+                    <ol class="anaba__list anaba__list--numbered">
+                      <li>
+                        <strong>道の駅国見 あつかしの郷</strong> —
+                        国道4号沿い。農産物直売・国見バーガー・ジェラートなど。駐車場も広い。
+                      </li>
+                      <li>
+                        <strong>あつかし千年公園</strong> —
+                        阿津賀志山防塁など史跡。時間があれば短時間の散策。
+                      </li>
+                    </ol>
+                    <p class="anaba__note">
+                      花火の19:30に間に合わせるなら、17:30頃には国見を出発し、信夫山など観覧スポットへ向かうのが安心です。
+                    </p>
+                  </div>
+                  <p class="timeline__meta">車で約30〜40分（白石→国見）</p>
+                </article>
+              </li>
+              <li class="timeline__item">
+                <div class="timeline__time">17:30 – 19:00</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">国見出発 → 花火観覧地へ</h3>
+                  <p>
+                    夕食は国見の道の駅や、福島市内で軽く済ませる想定。渋滞・交通規制を見越し、観覧スポットへ早めに入ります。
+                  </p>
+                  <p class="timeline__meta">車で約30〜40分（国見→信夫山方面）</p>
+                </article>
+              </li>
+              <li class="timeline__item timeline__item--highlight">
+                <div class="timeline__time">19:30頃</div>
+                <article class="timeline__card">
+                  <h3 class="timeline__heading">
+                    <a
+                      href="https://www.f-kankou.jp/event/27427"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >信夫ヶ丘・ふくしま花火大会を少しだけ観覧</a
+                    >
+                  </h3>
+                  <p>
+                    国見からそのまま花火へ。打ち上げは19:30〜20:30頃。穴場で序盤だけ眺めて帰宅する想定です。
+                  </p>
+                  <div class="anaba">
+                    <p class="anaba__title">穴場スポット候補（候補1と同じ）</p>
+                    <ol class="anaba__list anaba__list--numbered">
+                      <li>
+                        <strong>信夫山（テングラ岩付近・19:00着推奨）</strong> —
+                        駐車場：天狗の森／信夫山ガイドセンター
+                      </li>
+                      <li><strong>松川土手</strong>（会場対岸）</li>
+                      <li><strong>阿武隈川サイクリングロード</strong></li>
+                    </ol>
+                  </div>
+                  <p class="timeline__meta">会場周辺は17:00〜22:00交通規制</p>
+                </article>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
 
@@ -405,6 +711,40 @@
               <h3 class="tip-card__title">桃狩りの予約</h3>
               <p>
                 7月下旬は最盛期のため、11:00からの時間枠を事前に「まるよし果樹園」へWEBまたは電話で予約しておくと安心です。
+              </p>
+            </li>
+            <li class="tip-card">
+              <h3 class="tip-card__title">1日目・候補2（白石・国見）</h3>
+              <p>
+                やまぶき亭は11:00〜14:00（水曜定休）。桃狩り後12:00出発→12:50頃到着が目安。観光は城下町か<strong>宮城蔵王キツネ村</strong>（最終入場16:00・白石ICから約20分）のどちらか優先。その後国見（道の駅あつかしの郷）に立ち寄り、17:30頃には花火観覧地へ。
+              </p>
+            </li>
+            <li class="tip-card">
+              <h3 class="tip-card__title">ランチ／ディナー（円盤餃子・候補1）</h3>
+              <p>
+                昼は「餃子酒家照井」または「伊達屋」。夜の円盤餃子は飯坂の「照井本店」「おがた」（いずれも17時頃開店・売り切れ終了）。花火19:30前なら17時台の入店がおすすめ。
+              </p>
+            </li>
+            <li class="tip-card">
+              <h3 class="tip-card__title">飯坂・日帰り温泉</h3>
+              <p>
+                設備重視なら摺上亭大鳥（〜15:00）・祭屋湯左衛門・なかむらや（要予約）がおすすめ。料金はおおむね800〜1,000円台。メンテナンスや混雑で入れない日もあるので各館に電話確認を。一覧は
+                <a href="https://iizaka.com/daytrip/" target="_blank" rel="noopener noreferrer"
+                  >飯坂温泉オフィシャル（日帰り）</a
+                >
+                を参照。
+              </p>
+            </li>
+            <li class="tip-card tip-card--warn">
+              <h3 class="tip-card__title">ふくしま花火大会（信夫ヶ丘）</h3>
+              <p>
+                2026年は7月25日（土）19:30〜20:30頃開催予定（予備日なし）。会場周辺は17:00〜22:00の交通規制あり。穴場候補1は信夫山（テングラ岩付近）。駐車場は「天狗の森駐車場」「信夫山ガイドセンター駐車場」。帰宅渋滞を避けるなら序盤観覧で切り上げを。開催情報は
+                <a
+                  href="https://www.f-kankou.jp/event/27427"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >福島市観光ノート</a
+                >で直前確認を。
               </p>
             </li>
             <li class="tip-card tip-card--warn">

@@ -461,8 +461,13 @@ a:hover {
   animation: fadeIn 0.35s ease;
 }
 
-.route-panel[hidden] {
+.route-panel[hidden],
+.route-panel:not(.is-active) {
   display: none;
+}
+
+.route-panel.is-active {
+  display: block;
 }
 
 .route-panel__summary {
@@ -606,6 +611,66 @@ a:hover {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--color-onsen) !important;
+}
+
+.anaba {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  background: var(--color-peach-light);
+  border-radius: var(--radius-sm);
+}
+
+.anaba__title {
+  margin: 0 0 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-aizu);
+}
+
+.anaba__list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+}
+
+.anaba__list--numbered {
+  list-style: decimal;
+}
+
+.anaba__list > li + li {
+  margin-top: 0.65rem;
+}
+
+.anaba__list strong {
+  color: var(--color-text);
+}
+
+.anaba__parking {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+  font-size: 0.88rem;
+}
+
+.anaba__parking li + li {
+  margin-top: 0.2rem;
+}
+
+.anaba__note {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.anaba__note a {
+  color: var(--color-aizu);
+  font-weight: 600;
+}
+
+.tips a {
+  color: var(--color-peach-light);
 }
 
 /* Tips */

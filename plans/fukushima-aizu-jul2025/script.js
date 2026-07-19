@@ -2,8 +2,6 @@
   const navToggle = document.querySelector(".nav__toggle");
   const navMenu = document.querySelector(".nav__menu");
   const navLinks = document.querySelectorAll(".nav__menu a");
-  const tabs = document.querySelectorAll(".route-tabs__btn");
-  const panels = document.querySelectorAll(".route-panel");
 
   if (navToggle && navMenu) {
     navToggle.addEventListener("click", () => {
@@ -32,44 +30,41 @@
     });
   }
 
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const targetId = tab.getAttribute("aria-controls");
-      const targetPanel = document.getElementById(targetId);
+  document.querySelectorAll(".route-tabs").forEach((tablist) => {
+    const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
 
+    function activateTab(tab) {
       tabs.forEach((item) => {
         const isActive = item === tab;
         item.classList.toggle("is-active", isActive);
         item.setAttribute("aria-selected", String(isActive));
         item.tabIndex = isActive ? 0 : -1;
-      });
 
-      panels.forEach((panel) => {
-        const isActive = panel.id === targetId;
+        const panel = document.getElementById(item.getAttribute("aria-controls"));
+        if (!panel) return;
         panel.classList.toggle("is-active", isActive);
         panel.hidden = !isActive;
       });
+    }
 
-      if (targetPanel) {
-        targetPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      }
-    });
+    const defaultTab =
+      tabs.find((tab) => tab.classList.contains("is-active")) || tabs[0];
+    if (defaultTab) activateTab(defaultTab);
 
-    tab.addEventListener("keydown", (event) => {
-      const index = Array.from(tabs).indexOf(tab);
-      let nextIndex = index;
-
-      if (event.key === "ArrowRight" || event.key === "ArrowDown") {
-        nextIndex = (index + 1) % tabs.length;
-      } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
-        nextIndex = (index - 1 + tabs.length) % tabs.length;
-      } else {
-        return;
-      }
-
-      event.preventDefault();
-      tabs[nextIndex].click();
-      tabs[nextIndex].focus();
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => activateTab(tab));
+      tab.addEventListener("keydown", (event) => {
+        const index = tabs.indexOf(tab);
+        let next = index;
+        if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+          next = (index + 1) % tabs.length;
+        } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+          next = (index - 1 + tabs.length) % tabs.length;
+        } else return;
+        event.preventDefault();
+        tabs[next].click();
+        tabs[next].focus();
+      });
     });
   });
 })();
